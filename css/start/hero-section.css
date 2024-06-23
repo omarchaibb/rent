@@ -1,0 +1,111 @@
+#hero-section{
+    width: 100%;
+    height: calc(124vh - 50px);
+    background: radial-gradient(128.17% 50% at 50% 50%, #0073ff33 0%, hsla(0, 0%, 0%, 0) 100%);
+    display: flex;
+
+
+    .content{
+        width: 100%;
+        margin: 40px 100px ;
+        backdrop-filter: blur(6px);
+        box-shadow: 0 0 16px rgba(0, 0, 0,0.2);
+        border-radius: 50px;
+        padding: 30px;
+
+        h1{
+            font-size: 38px;
+            color: white;
+            word-spacing: 10px;
+        }
+
+        p{
+            font-size: 25px;
+            margin-top: 30px;
+            font-size: 17px;
+            word-spacing: 8px;
+            font-weight: 400;
+            color: #b9b9b9;
+        }
+
+        .links{
+            margin:20px auto 0 auto;
+            width: fit-content;
+            text-align: center;
+            backdrop-filter: blur(3px);
+            background-color: rgba(0, 0, 0,0.5);
+            border-radius: 10px;
+            display: flex;
+            width: 186px;
+            a:last-child{
+                padding: 9px 29px;
+            }
+            a{
+                display: inline-block;
+                color: white;
+                font-size: 18px;
+                padding: 9px 15px;
+                transition: .2s;
+                &:hover{
+                    background-color: #c3b4;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+
+    form {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        input{
+            color: #222;
+            max-width: 500px;
+            width: 100%;
+            line-height: 40px;
+            font-size: 20px;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+            box-shadow: 0 1px 15px rgba(18, 68, 109, .25);
+            padding: 0 1.5rem;
+            height: 50px;
+        }
+        
+    }
+
+    .search{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        /* background-color: red; */
+        width: 500px;
+        display: none;
+        form{
+            width: 70%;
+            margin: auto;
+        }
+
+    }
+
+    
+    
+}
+
+.display{
+    display: block !important;
+    filter: blur(0px);
+    z-index: 99;
+    position: absolute;
+
+
+}
+
+.blur{
+    filter: blur(10px);
+    
+}
